@@ -9,7 +9,6 @@ RUN apt update -y && \
 RUN mkdir -p /data-copier
 COPY app /data-copier/app
 COPY setup.py /data-copier/setup.py
-COPY requirements.txt /data-copier
 
 # Install application dependencies
 RUN pip install /data-copier
